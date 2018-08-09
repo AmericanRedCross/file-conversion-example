@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>omk</title>
+  <style type="text/css">
+      code{white-space: pre-wrap;}
+      span.smallcaps{font-variant: small-caps;}
+      span.underline{text-decoration: underline;}
+      div.column{display: inline-block; vertical-align: top; width: 50%;}
+  </style>
+  <!--[if lt IE 9]>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script>
+  <![endif]-->
+</head>
+<body>
+<h2 id="please-see-httpposm.io-for-up-to-date-documentation.">Please see http://posm.io/ for up-to-date documentation.</h2>
+<hr />
+<h2 id="openmapkit-omk">OpenMapKit (OMK)</h2>
+<p>https://github.com/americanredcross/openmapkit/wiki</p>
+<h3 id="what-omk-does-well-what-it-doesnt-do">What OMK does well, what it doesn’t do</h3>
+<ul>
+<li>buildings and roads</li>
+<li>currently no creation of new features
+<ul>
+<li>features need to be pre-traced</li>
+</ul></li>
+<li>currently doesn’t handle points
+<ul>
+<li>one of the next features to be added will be the ability to create new points</li>
+</ul></li>
+<li>dense areas are tough
+<ul>
+<li>decreased GPS accuracy</li>
+<li>requires greater map literacy</li>
+</ul></li>
+</ul>
+<h3 id="creating-the-survey">Creating the survey</h3>
+<ul>
+<li>XLSForm syntax: basic
+<ul>
+<li>http://xlsform.org/</li>
+</ul></li>
+<li>XLSForm syntax: adding the OpenMapKit question type
+<ul>
+<li>https://github.com/AmericanRedCross/OpenMapKit/wiki/OpenDataKit-Forms-for-OpenMapKit</li>
+</ul></li>
+<li>form design: OSM tags, caveats, tips &amp; tricks
+<ul>
+<li>if a key is part of the survey and a feature has a pre-exisiting value that is not included in the options list, then that value will not display in the question interface</li>
+<li>use <a href="https://taginfo.openstreetmap.org">taginfo</a> to research if keys/values are commonly used</li>
+<li>don’t include the same tags on two objects. <a href="http://wiki.openstreetmap.org/wiki/One_feature,_one_OSM_element">One feature, one osm element</a></li>
+<li>when providing name=* for a highway or addr:street=* for a building
+<ul>
+<li>don’t abbreviate (for example, use “Road” and “Lane” NOT “Rd” and “Ln”)</li>
+<li>use title case, capitalize the first letter of each word</li>
+</ul></li>
+</ul></li>
+</ul>
+<h3 id="setting-up-the-app">Setting up the app</h3>
+<ul>
+<li>install ODK Collect and OpenMapKit on a phone
+<ul>
+<li>the next version of ODK when published to the Google Play Store should include all necessary functionality but for now you will need to use the APK files downloadable from the <a href="https://github.com/AmericanRedCross/OpenMapKit/wiki/Downloads">wiki</a>
+<ul>
+<li>download directly to you phone or copy both files over from your computer</li>
+<li>use the phone’s file browser to open the files to install</li>
+<li>you may need to install a file browser such as ES File Explorer File Manager</li>
+<li>you may need to change the security settings on the phone to allow installation of apps from unknown sources</li>
+<li>do not update ODK Collect</li>
+</ul></li>
+</ul></li>
+</ul>
+</body>
+</html>
